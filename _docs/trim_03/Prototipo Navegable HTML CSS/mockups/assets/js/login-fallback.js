@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const password = form.password.value;
         const found = users.some(u => u.email === email && u.password === password);
         if (found) {
-            window.location.href = 'pages/inicio.html';
+            window.location.href = 'inicio.html';
         } else {
             errorDiv.textContent = 'Usuario o contraseña incorrectos (demo JS)';
             errorDiv.style.display = 'block';
